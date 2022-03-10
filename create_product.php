@@ -57,7 +57,7 @@
                 <br>
             <label for="cars">Choose category:</label>
             <select name="category" id="cars">
-                <option value="Tee">Toy</option>
+                <option value="Toy">Toy</option>
             </select>
             </div>
             <div class="form-group">
