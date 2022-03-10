@@ -15,6 +15,11 @@
         WHERE id = $id";
 
         $result = pg_query($conn, $pg);
+
+        $count = pg_num_rows($result);
+
+
+        $row = pg_fetch_array($result);
         header('location: main.php');
     }
   
