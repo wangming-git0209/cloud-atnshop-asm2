@@ -44,9 +44,28 @@
                 <br>
             <label for="cars">Choose category:</label>
             <select name="category" id="cars">
-                <option value="Tee">Tee</option>
+                <option value="Toy">Toy</option>
                
             </select>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">company</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" 
+                    aria-describedby="emailHelp" placeholder="Enter shop"
+                    name="name"
+                    value="<?php echo $row['company']?>"
+                >
+                
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Amount</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" 
+                    aria-describedby="emailHelp" placeholder="Enter amount"
+                    name="name"
+                    value="<?php echo $row['amount']?>"
+                >
+                
             </div>
             <div class="form-group">
                 <br>
