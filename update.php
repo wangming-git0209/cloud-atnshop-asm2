@@ -36,7 +36,7 @@
                 <label for="exampleInputEmail1">Amount</label>
                 <input type="text" class="form-control" id="exampleInputEmail1" 
                     aria-describedby="emailHelp" placeholder="Enter amount product"
-                    name="name"
+                    name="amount"
                     value="<?php echo $row['amount']?>"
                 >
                 
@@ -46,7 +46,7 @@
                 <label for="exampleInputEmail1">Company</label>
                 <input type="text" class="form-control" id="exampleInputEmail1" 
                     aria-describedby="emailHelp" placeholder="Enter company"
-                    name="name"
+                    name="company"
                     value="<?php echo $row['company']?>"
                 >
                 
@@ -65,7 +65,7 @@
                 <br>
             <label for="cars">Choose category:</label>
             <select name="category" id="cars">
-                <option value="Tee">Tee</option>
+                <option value="Toy">Toy</option>
                
             </select>
             </div>

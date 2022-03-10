@@ -14,11 +14,8 @@
         SET name = '$productName', image= '$image', category =' $category', price='$price' , company='$company', amount='$amount' WHERE id = $id";
 
         $result = pg_query($conn, $pg);
-        if(isset($result)) {
-            echo "oke";
-        }
-        else {echo "ngu";}
-        // header('location: main.php');
+        
+        header('location: main.php');
   
 
 ?>
