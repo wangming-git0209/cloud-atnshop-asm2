@@ -27,7 +27,7 @@
                 <input type="text" class="form-control" id="exampleInputEmail1" 
                     aria-describedby="emailHelp" placeholder="Enter product name"
                     name="name"
-                    value="<?php echo $row['name']?>"
+                    <!-- value="<?php echo $row['name']?>" -->
                 >
                 
             </div>
@@ -37,45 +37,41 @@
                 <input type="file" class="form-control" 
                 id="exampleInputPassword1" 
                 name="image"
-                value="<?php echo $row['image']?>"
                 >
             </div>
+
             <div class="form-group">
                 <br>
             <label for="cars">Choose category:</label>
             <select name="category" id="cars">
                 <option value="Toy">Toy</option>
-               
             </select>
             </div>
 
             <div class="form-group">
-                <label for="exampleInputEmail1">company</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" 
-                    aria-describedby="emailHelp" placeholder="Enter shop"
-                    name="name"
-                    value="<?php echo $row['company']?>"
-                >
-                
-            </div>
+                    <br>
+                    <label for="exampleInputPassword1">Company</label>
+                    <input type="text" class="form-control" 
+                    id="exampleInputPassword1" placeholder="Enter amount product"
+                    name="company"
+                    >
+                </div>
             <div class="form-group">
-                <label for="exampleInputEmail1">Amount</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" 
-                    aria-describedby="emailHelp" placeholder="Enter amount"
-                    name="name"
-                    value="<?php echo $row['amount']?>"
-                >
-                
-            </div>
-            <div class="form-group">
-                <br>
-                <label for="exampleInputPassword1">Price</label>
-                <input type="text" class="form-control" 
-                id="exampleInputPassword1" placeholder="Enter Price"
-                name="price"
-                value="<?php echo $row['price']?>"
-                >
-            </div>
+                    <br>
+                    <label for="exampleInputPassword1">Amount</label>
+                    <input type="text" class="form-control" 
+                    id="exampleInputPassword1" placeholder="Enter amount product"
+                    name="amount"
+                    >
+                </div>
+                <div class="form-group">
+                    <br>
+                    <label for="exampleInputPassword1">Price</label>
+                    <input type="text" class="form-control" 
+                    id="exampleInputPassword1" placeholder="Enter price product"
+                    name="amount"
+                    >
+                </div>
             <br>
             <button type="submit" class="btn btn-primary" name='submit'>Submit</button>
         </form>
