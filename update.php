@@ -31,6 +31,27 @@
                 >
                 
             </div>
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">Amount</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" 
+                    aria-describedby="emailHelp" placeholder="Enter amount product"
+                    name="name"
+                    value="<?php echo $row['amount']?>"
+                >
+                
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">Company</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" 
+                    aria-describedby="emailHelp" placeholder="Enter company"
+                    name="name"
+                    value="<?php echo $row['company']?>"
+                >
+                
+            </div>
+
             <div class="form-group">
                 <br>
                 <label for="exampleInputPassword1">image</label>
