@@ -27,7 +27,7 @@
                 <input type="text" class="form-control" id="exampleInputEmail1" 
                     aria-describedby="emailHelp" placeholder="Enter product name"
                     name="name"
-                    <!-- value="<?php echo $row['name']?>" -->
+                   
                 >
                 
             </div>
