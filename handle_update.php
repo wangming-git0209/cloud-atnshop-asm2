@@ -1,7 +1,7 @@
 <?php 
     include('database.php');
         
-    if(isset($_POST['submit']) ) {
+   
 
         $id = $_GET['id'];
         $productName = $_POST['name'];
@@ -21,7 +21,7 @@
 
         $row = pg_fetch_array($result);
         header('location: main.php');
-    }
+    
   
 
 ?>
