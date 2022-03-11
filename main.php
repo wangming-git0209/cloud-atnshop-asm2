@@ -97,7 +97,7 @@
                   <a href="update.php?id=<?php echo $row['id']?>" class="btn btn-success">Update </a>
                   <a href="delete.php?id=<?php echo $row['id']?>" class="btn btn-danger">Delete </a>
                 </td>
-            </tr>
+            </tr> 
         <?php } ?>
                                           
                           </tbody>
