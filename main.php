@@ -73,8 +73,8 @@
                                         <thead>
                                             <tr>
                                                 <th>ID</th>
-                                                <th>Shop Name</th>
                                                 <th>Name</th>
+                                                <th>Shop Name</th>
                                                 <th>Images</th>
                                                 <th>Category</th>
                                                 <th>Amount</th>
