@@ -1,8 +1,7 @@
 <?php 
     include('database.php');
     $name = $_SESSION['login_user'];
-    echo "$name"; 
-    $sql = "SELECT * FROM product WHERE company = '$name'";
+    $sql = "SELECT * FROM product WHERE company = 'shop_1'";
     $result = pg_query($conn, $sql);
 ?>
 <!DOCTYPE html>
