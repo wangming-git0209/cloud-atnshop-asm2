@@ -1,7 +1,6 @@
 <?php 
 session_start();
-$sql = "SELECT * FROM admin";
-$result = pg_query($conn, $sql);
+
 ?>
 <!doctype html>
 <html lang="en">
