@@ -179,8 +179,8 @@ margin-top:13px ;
   <body>
   <img class='img' src="./img/icon.jpg">
   
-      <form action="handle_admin.php?name=<?php echo $row['name']?>" method ="POST"> 
-  <div class="main">
+      <form action="handle_admin.php" method ="POST">  
+  <div class="main"> 
     <p class="sign">Login</p>
     <form class="form1">
       <input class="un " type="text"  placeholder="Username" name="username">

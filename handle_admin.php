@@ -21,7 +21,9 @@ else{
 } */
 
 $pg = "SELECT * FROM admin WHERE name = '$username' AND password ='$password'";
+$selectProduct = $sql = "SELECT * FROM product WHERE company= '$username' "; 
 $result = pg_query($conn, $pg);
+$result2 = pg_query($conn, $selectProduct);
 // var_dump($result);
 // session_die();
 $count = pg_num_rows($result);
