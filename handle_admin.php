@@ -42,7 +42,6 @@ if($username == 'shop_1' || $username == 'shop_2')
 if($username == 'admin') {
     if(pg_num_rows($result) >0){
 
-        echo "I'm about to learn PHP!";
         $_SESSION['login_user'] = $row['name'];
         header("location: main.php");
     }
