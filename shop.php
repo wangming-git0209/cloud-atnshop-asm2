@@ -1,6 +1,7 @@
 <?php 
     include('database.php');
-    $sql = "SELECT * FROM product";
+    $username = $_POST['username'];
+    $sql = "SELECT * FROM product WHERE company= '$username'";
     $result = pg_query($conn, $sql);
 ?>
 <!DOCTYPE html>
