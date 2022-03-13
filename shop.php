@@ -1,8 +1,9 @@
+session_start(); 
+
 <?php 
     include('database.php');
-    $selectProduct = $sql = "SELECT * FROM admin";
-    $username = $row['name']; 
-    $sql = "SELECT * FROM product WHERE company = '$username'";
+    $nameShop = $_SESSION['login_user']; 
+    $sql = "SELECT * FROM product WHERE company = '$nameShop'";
     $result = pg_query($conn, $sql);
 ?>
 <!DOCTYPE html>
