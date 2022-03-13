@@ -18,7 +18,7 @@
 
 
         $row = pg_fetch_array($result);
-        header("location: main.php");
+        header("location: shop.php");
     }
 
 ?>
