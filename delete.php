@@ -6,4 +6,6 @@
 
     $result = pg_query($conn, $pg);
     header('location: main.php'); 
+    
+    // director werwer
 ?>
