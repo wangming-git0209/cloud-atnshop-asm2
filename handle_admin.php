@@ -21,24 +21,37 @@ else{
 } */
 
 $pg = "SELECT * FROM admin WHERE name = '$username' AND password ='$password'";
-
-
 $result = pg_query($conn, $pg);
 // var_dump($result);
 // session_die();
 $count = pg_num_rows($result);
 
 
-$row = pg_fetch_array($result);// w3
+$row = pg_fetch_array($result);
 
-if(pg_num_rows($result) >0){
+if($username == 'shop_1' || $username == 'shop_2')
+    {
+        //header(); toi trang shop 
+    }
 
-    echo "I'm about to learn PHP!";
-    $_SESSION['login_user'] = $row['name'];
-    header("location: main.php");
+if($username == 'admin') {
+    if(pg_num_rows($result) >0){
+
+        echo "I'm about to learn PHP!";
+        $_SESSION['login_user'] = $row['name'];
+        header("location: main.php");
+    }
+    else{
+        echo '<script language="javascript">alert("Password or username incorrect !!! try again!!"); window.location="login.php";</script>';
+    }
 }
-else{
-    echo '<script language="javascript">alert("Password or username incorrect !!! try again!!"); window.location="login.php";</script>';
-}
+
+  
+
+
+
+// w3
+
+
 
 ?>
