@@ -32,6 +32,7 @@ $row = pg_fetch_array($result);
 if($username == 'shop_1' || $username == 'shop_2')
     {
         //header(); toi trang shop 
+        echo "okeee"; 
     }
 
 if($username == 'admin') {
