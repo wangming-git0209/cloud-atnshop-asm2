@@ -49,10 +49,10 @@
                             <a class="nav-link" href="index.php">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div> Home
                             </a>
-                            <!-- <a class="nav-link collapsed" href="create_product.php"  data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                            <a class="nav-link collapsed" href="create_product.php"  data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Create New product
-                            </a> -->
+                            </a>
                         </div>
                     </div>
                 </nav>
