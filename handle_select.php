@@ -5,7 +5,8 @@ echo "hello";
 
     if($_POST['submit']) {
         $company = $_POST['company'];
-        if($_POST['company'] == 'allShop') { 
+        if($_POST['company'] == "allShop") { 
+            $_SESSION['selectAllShop'] = $company;
             $query = "SELECT * FROM product";
             header("location: main.php");
         }
