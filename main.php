@@ -62,22 +62,7 @@
                     <div class="container-fluid">
                         <h1 class="mt-4">Product</h1>
 
-                        <div class="form-group">
-                            <br>
-                        <label for="cars">Choose shop:</label>
-                        <select name="category" id="cars">
-                        <?php 
-                            while($rowShop = pg_fetch_assoc($result)) { ?>
-                                <option value="Shop">
-                                    <?php echo $rowShop['company']; ?>
-
-                              </option> <?php
-                            }
-                            ?>
-                            
-                            
-                        </select>
-                        </div>
+                        
 
                         <div class="card mb-4">
                             <div class="card-header">
