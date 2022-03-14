@@ -6,7 +6,7 @@ $db = "d1ss7frioqij2v";
 $uri = 'postgres://eelbfijcrpipng:f9598d15b631ab09a368034c39b94a88113e11c6ae0000e31b4a927eb132ee64@ec2-52-207-74-100.compute-1.amazonaws.com:5432/d1ss7frioqij2v';
 // Create connection
 $conn = pg_connect($uri);
-
+session_start(); 
 /* $conn_string = "ec2-3-216-221-31.compute-1.amazonaws.com";
          " port=5432 dbname=dr4viqhane5dt";
          " user=anmvhqifhrelof";
