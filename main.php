@@ -73,6 +73,8 @@
                         
                                 <option value="shop_1">shop_1</option> 
                                 <option value="shop_2">shop_2</option> 
+                                <option value="allShop">All shop</option> 
+
 
                         </select>
                         <input type="submit" name="submit">
