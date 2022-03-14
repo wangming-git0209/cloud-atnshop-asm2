@@ -1,10 +1,10 @@
 <?php 
     include('database.php');
+    $nameShop = $_SESSION['login_user'];
 
     if(isset($_POST['submit']) ) {
        
-        $productName = $_POST['name'];
-        
+        $productName = $_POST['name'];  
         $amount = $_POST['amount'];
         $image = $_POST['image'];
         $category = $_POST['category'];
