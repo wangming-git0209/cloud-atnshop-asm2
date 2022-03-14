@@ -1,10 +1,11 @@
 <?php
 session_start();
 include 'database.php';
-echo "hello";
+
 
     if($_POST['submit']) {
         $company = $_POST['company'];
+        
         if($_POST['company'] == "allShop") { 
             $_SESSION['selectAllShop'] = $company;
             $query = "SELECT * FROM product";

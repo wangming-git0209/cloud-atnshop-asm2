@@ -124,9 +124,9 @@
                                                     <?php
 
                                                 }
-                                                unset($_SESSION['selectShop']);
                                                 
                                             }
+                                            unset($_SESSION['selectShop']);
 
                                             if(isset($_SESSION['selectAllShop'])) 
                                             { 
@@ -149,8 +149,8 @@
                                                         
                                                     <?php
                                                 }
-                                                unset($_SESSION['selectShop']);
                                             }
+                                            unset($_SESSION['selectAllShop']);
                                             
 
                                             if(!isset($_SESSION['selectAllShop']) && !isset($_SESSION['selectShop'])) {
