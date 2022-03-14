@@ -1,6 +1,7 @@
 <?php
     include('database.php');
     $productId = $_GET['id'];
+    
     $sql = "SELECT * FROM product WHERE id = '$productId'";
     $result = pg_query($conn, $sql);
     $row = pg_fetch_assoc($result);
@@ -42,15 +43,6 @@
                 
             </div>
 
-            <div class="form-group">
-                <label for="exampleInputEmail1">Company</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" 
-                    aria-describedby="emailHelp" placeholder="Enter company"
-                    name="company"
-                    value="<?php echo $row['company']?>"
-                >
-                
-            </div>
 
             <div class="form-group">
                 <br>

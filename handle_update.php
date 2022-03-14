@@ -1,6 +1,6 @@
 <?php 
     include('database.php');
-        
+    $nameShop = $_SESSION['login_user'];
 
         $id = $_GET['id'];
         $productName = $_POST['name'];
@@ -11,7 +11,7 @@
         $price = $_POST['price'];
         
         $pg = "UPDATE product
-        SET name = '$productName', image= '$image', category =' $category', price='$price' , company='$company', amount='$amount' WHERE id = $id";
+        SET name = '$productName', image= '$image', category =' $category', price='$price' , company='$nameShop', amount='$amount' WHERE id = $id";
 
         $result = pg_query($conn, $pg);
         
