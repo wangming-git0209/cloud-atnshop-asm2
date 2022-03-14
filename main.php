@@ -1,6 +1,6 @@
 <?php 
     include('database.php');
-    $sql = "SELECT * FROM product where company=''";
+    $sql = "SELECT * FROM product where company='shop_1'";
     $result = pg_query($conn, $sql);
 ?>
 <!DOCTYPE html>
