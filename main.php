@@ -2,7 +2,7 @@
     include('database.php');
     $selectShop =  $_SESSION['selectShop'];
     $sql = "SELECT * FROM product";
-    $sql_selectShop = $query = "SELECT * FROM product where company='$selectShop'";
+    $sql_selectShop = "SELECT * FROM product where company='$selectShop'";
     $result = pg_query($conn, $sql);
     $result_select = pg_query($conn, $sql_selectShop);
 ?>

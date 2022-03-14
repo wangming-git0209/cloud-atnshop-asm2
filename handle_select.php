@@ -10,7 +10,6 @@ echo "hello";
         $row = pg_fetch_array($result);
 
         $_SESSION['selectShop'] = $row['company']; 
-
         header("location: main.php");
     }
 ?>
