@@ -62,7 +62,7 @@
                     <div class="container-fluid">
                         <h1 class="mt-4">Product</h1>
 
-                        <!-- <form action="handle_select.php" > -->
+                        <form action="handle_select.php" >
                         <div class="form-group">
                             <br>
                         <label>Choose shop:</label>
@@ -74,7 +74,7 @@
                         </select>
                         <input type="submit">
                         </div>
-                        <!-- </form> -->
+                        </form>
 
                         <div class="card mb-4">
                             <div class="card-header">
