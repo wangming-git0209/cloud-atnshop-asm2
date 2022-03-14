@@ -7,7 +7,8 @@ include 'database.php';
         
         $query = "SELECT * FROM product where company='$company'";
 
-        echo $company;
-    
+        $_SESSION['selectShop'] = $query; 
+
+        header("location: main.php");
     }
 ?>

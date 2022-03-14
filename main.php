@@ -98,21 +98,25 @@
                                             </tr>
                                         </thead>
                                         <tbody>                             
-                                        <?php while($row = pg_fetch_assoc($result)) {?>
-                                <tr>
-                                    <td><?php echo $row['id']?></td>
-                                    <td><?php echo $row['name']?></td>
-                                    <td><?php echo $row['company']?></td>
-                                    <td><img src="./img/<?php echo $row['image']?>" alt="img" width="250" height="250"></td>
-                                    <td><?php echo $row['category']?></td>
-                                    <td><?php echo $row['amount']?></td>
-                                    <td><?php echo $row['price']?></td>
-                                    <td>
-                                    <a href="update.php?id=<?php echo $row['id']?>" class="btn btn-success">Update </a>
-                                    <a href="delete.php?id=<?php echo $row['id']?>" class="btn btn-danger">Delete </a>
-                                    </td>
-                                </tr> 
-                            <?php } ?>
+                                        <?php 
+                                        do { ?> 
+                                            <tr>
+                                            <td><?php echo $row['id']?></td>
+                                            <td><?php echo $row['name']?></td>
+                                            <td><?php echo $row['company']?></td>
+                                            <td><img src="./img/<?php echo $row['image']?>" alt="img" width="250" height="250"></td>
+                                            <td><?php echo $row['category']?></td>
+                                            <td><?php echo $row['amount']?></td>
+                                            <td><?php echo $row['price']?></td>
+                                            <td>
+                                            <a href="update.php?id=<?php echo $row['id']?>" class="btn btn-success">Update </a>
+                                            <a href="delete.php?id=<?php echo $row['id']?>" class="btn btn-danger">Delete </a>
+                                            </td>
+                                        </tr> 
+                                        <?php 
+                                        } while($row = pg_fetch_assoc($result));
+                                        ?>
+                            
                                           
                           </tbody>
                                     </table>
