@@ -1,6 +1,6 @@
 <?php 
     include('database.php');
-    $sql = "SELECT * FROM product";
+    $sql = "SELECT * FROM product where company=''";
     $result = pg_query($conn, $sql);
 ?>
 <!DOCTYPE html>
@@ -62,7 +62,7 @@
                     <div class="container-fluid">
                         <h1 class="mt-4">Product</h1>
 
-                        
+                        <form action="/action_page.php" >
                         <div class="form-group">
                             <br>
                         <label for="cars">Choose shop:</label>
@@ -72,7 +72,9 @@
                                 <option value="Shop">shop_2</option> 
 
                         </select>
+                        <input type="submit">
                         </div>
+                        </form>
 
                         <div class="card mb-4">
                             <div class="card-header">
