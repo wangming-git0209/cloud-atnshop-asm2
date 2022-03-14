@@ -6,8 +6,9 @@ include 'database.php';
         $company = $_POST['company'];
         
         $query = "SELECT * FROM product where company='$company'";
+        $row = pg_fetch_array($result);
 
-        $_SESSION['selectShop'] = $query; 
+        $_SESSION['selectShop'] = $row['company']; 
 
         header("location: main.php");
     }

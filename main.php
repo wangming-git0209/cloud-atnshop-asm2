@@ -1,6 +1,8 @@
 <?php 
     include('database.php');
+    $selectShop =  $_SESSION['selectShop'];
     $sql = "SELECT * FROM product";
+    $sql_selectShop = $query = "SELECT * FROM product where company='$company'";
     $result = pg_query($conn, $sql);
 ?>
 <!DOCTYPE html>
@@ -100,7 +102,7 @@
                                         <tbody>                             
                                         <?php 
                                             if(isset($_SESSION['selectShop'])) {
-                                                while($row = pg_fetch_assoc($_SESSION['selectShop'])) {
+                                                while($row = pg_fetch_assoc($sql_selectShop)) {
                                                     ?>  
                                                         <tr>
                                                         <td><?php echo $row['id']?></td>
