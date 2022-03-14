@@ -1,8 +1,8 @@
 <?php
 session_start();
 include 'database.php';
-
-    if(isset($_POST['submit'])) {
+    
+    if($_POST['submit']) {
     echo "hello"; 
     
     }
