@@ -7,9 +7,10 @@ echo "hello";
         $company = $_POST['company'];
         echo "hello";
         $query = "SELECT * FROM product where company='$company'";
-        $row = pg_fetch_array($result);
+        echo $company;
+        // $row = pg_fetch_array($result);
 
-        $_SESSION['selectShop'] = $row['company']; 
+        $_SESSION['selectShop'] = $company;
         header("location: main.php");
     }
 ?>

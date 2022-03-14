@@ -122,7 +122,8 @@
                                                 }
                                             }
                                             else {
-                                                while($row = pg_fetch_assoc($result)) {
+                                                while($row = pg_fetch_assoc($result)) 
+                                                {
                                                 ?> 
                                                     <tr>
                                                     <td><?php echo $row['id']?></td>
@@ -144,9 +145,7 @@
 
                                        ?> 
                                             
-                                       
-                            
-                                          
+                           
                           </tbody>
                                     </table>
                                 </div>
