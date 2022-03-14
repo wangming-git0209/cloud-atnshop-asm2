@@ -62,11 +62,11 @@
                     <div class="container-fluid">
                         <h1 class="mt-4">Product</h1>
 
-                        <form action="/action_page.php" >
+                        <form action="handle_select.php" >
                         <div class="form-group">
                             <br>
-                        <label for="cars">Choose shop:</label>
-                        <select name="company" id="cars">
+                        <label>Choose shop:</label>
+                        <select name="company">
                         
                                 <option value="Shop">shop_1</option> 
                                 <option value="Shop">shop_2</option> 
