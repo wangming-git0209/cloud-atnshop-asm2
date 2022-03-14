@@ -1,6 +1,7 @@
 <?php
 session_start();
 include 'database.php';
+echo "hello";
 
     if($_POST['submit']) {
         $company = $_POST['company'];
