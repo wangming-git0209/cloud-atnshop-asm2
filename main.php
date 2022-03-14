@@ -126,7 +126,9 @@
                                                     </td>
                                                 </tr> 
                                                 <?php
+
                                         }
+
 
                                         }else if($_SESSION['selectShop']=='allShop'){
                                             while($row = pg_fetch_assoc($result)) 

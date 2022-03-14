@@ -5,7 +5,7 @@ include 'database.php';
 $chooseShop = $_POST['company'];
 
 
-if ($_POST['submit']) { 
+if (isset($_POST['submit'])) { 
     /* if(isset($_SESSION['selectShop']) && isset($_SESSION['selectAllShop'])) 
         { 
                 $company = $_POST['company'];
