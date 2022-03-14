@@ -4,6 +4,7 @@
     $sql = "SELECT * FROM product";
     $sql_selectShop = $query = "SELECT * FROM product where company='$company'";
     $result = pg_query($conn, $sql);
+    $result_select = pg_query($conn, $sql_selectShop);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -102,7 +103,7 @@
                                         <tbody>                             
                                         <?php 
                                             if(isset($_SESSION['selectShop'])) {
-                                                while($row = pg_fetch_assoc($sql_selectShop)) {
+                                                while($row = pg_fetch_assoc($result_select)) {
                                                     ?>  
                                                         <tr>
                                                         <td><?php echo $row['id']?></td>
