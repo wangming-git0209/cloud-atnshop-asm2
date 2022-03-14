@@ -3,9 +3,7 @@ session_start();
 include 'database.php';
 
 $chooseShop = $_POST['company'];
-$sql = "SELECT * FROM product";
-    //
-    $result = pg_query($conn, $sql);
+
 
 if ($_POST['submit']) { 
     /* if(isset($_SESSION['selectShop']) && isset($_SESSION['selectAllShop'])) 
@@ -35,7 +33,8 @@ if ($_POST['submit']) {
             }else if($chooseShop=='shop_2'){
                 $_SESSION['selectShop']='shop_2';
             }else{
-                while($row = pg_fetch_assoc($result)) 
+                $_SESSION['selectShop']='allShop';
+                /* while($row = pg_fetch_assoc($result)) 
             {
             ?> 
                 <tr>
@@ -53,15 +52,12 @@ if ($_POST['submit']) {
             </tr> 
                 
             <?php
-            }
+            } */
             }
         
         }
 
-        $selectShop =  $_SESSION['selectShop'];
-        $sql_selectShop = "SELECT * FROM product where company='$selectShop'";
-        $result_select = pg_query($conn, $sql_selectShop);
-
+        
             if(isset($_SESSION['selectShop'])){
                 while($row = pg_fetch_assoc($result_select)) {
                     ?>  
