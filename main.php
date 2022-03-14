@@ -62,7 +62,7 @@
                     <div class="container-fluid">
                         <h1 class="mt-4">Product</h1>
 
-                        <form action="handle_select.php" >
+                        <form action="handle_select.php" method="POST" >
                         <div class="form-group">
                             <br>
                         <label>Choose shop:</label>
