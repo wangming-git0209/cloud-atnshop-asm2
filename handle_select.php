@@ -4,7 +4,7 @@ include 'database.php';
 
     if($_POST['submit']) {
         $company = $_POST['company'];
-        
+        echo "hello";
         $query = "SELECT * FROM product where company='$company'";
         $row = pg_fetch_array($result);
 
