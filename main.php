@@ -121,8 +121,7 @@
                                                     <td><?php echo $row['amount']?></td>
                                                     <td><?php echo $row['price']?></td>
                                                     <td>
-                                                    <a href="update.php?id=<?php echo $row['id']?>" class="btn btn-success">Update </a>
-                                                    <a href="delete.php?id=<?php echo $row['id']?>" class="btn btn-danger">Delete </a>
+                                            
                                                     </td>
                                                 </tr> 
                                                 <?php
@@ -144,8 +143,7 @@
                                                 <td><?php echo $row['amount']?></td>
                                                 <td><?php echo $row['price']?></td>
                                                 <td>
-                                                <a href="update.php?id=<?php echo $row['id']?>" class="btn btn-success">Update </a>
-                                                <a href="delete.php?id=<?php echo $row['id']?>" class="btn btn-danger">Delete </a>
+                                               
                                                 </td>
                                             </tr> 
                                                 
