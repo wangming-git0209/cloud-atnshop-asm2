@@ -15,6 +15,6 @@
 
         $result = pg_query($conn, $pg);
         
-        header('location: main.php');
+        header('location: shop.php');
    
 ?>
