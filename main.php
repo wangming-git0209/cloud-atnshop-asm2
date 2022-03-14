@@ -1,6 +1,6 @@
 <?php 
     include('database.php');
-    
+    session_start();
     
 ?>
 <!DOCTYPE html>
@@ -104,12 +104,12 @@
                                         $selectedShop = $_SESSION['selectShop'];
                                         $sql = "SELECT * FROM product";
                                         $result = pg_query($conn, $sql);
-                                        $selectShop =  $_SESSION['selectShop'];
-                                        $sql_selectShop = "SELECT * FROM product where company='$selectShop'";
+                                        //$selectShop =  $_SESSION['selectShop'];
+                                        $sql_selectShop = "SELECT * FROM product where company='$selectedShop'";
                                         $result_select = pg_query($conn, $sql_selectShop);
                                     
 
-                                        if($_SESSION['selectShop']=='shop_1'){
+                                        if(isset($_SESSION['selectShop'])){
                                             while($row = pg_fetch_assoc($result_select)) {
                                                 ?>  
                                                     <tr>
@@ -128,9 +128,10 @@
                                                 <?php
 
                                         }
+                                        
 
-
-                                        }else if($_SESSION['selectShop']=='allShop'){
+                                        }
+                                         if($selectedShop=='allShop'){
                                             while($row = pg_fetch_assoc($result)) 
                                             {
                                             ?> 

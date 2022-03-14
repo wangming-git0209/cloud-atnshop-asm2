@@ -6,53 +6,20 @@ $chooseShop = $_POST['company'];
 
 
 if (isset($_POST['submit'])) { 
-    /* if(isset($_SESSION['selectShop']) && isset($_SESSION['selectAllShop'])) 
-        { 
-                $company = $_POST['company'];
-                if($_POST['company'] == "allShop") {
-
-                    $_SESSION['selectAllShop'] = $company;
-                    unset($_SESSION['selectShop']);
-                    
-                    header("location: main.php"); 
-
-                    
-                }
-                else { 
-                    $query = "SELECT * FROM product where company='$company'";
-
-                    $_SESSION['selectShop'] = $company;
-                    unset($_SESSION['selectAllShop']);
-                    header("location: main.php");
-                }
-            } */
+   
             if($chooseShop=='shop_1'){
                 $_SESSION['selectShop']='shop_1';
+
+                header("location: main.php");
                 
 
             }else if($chooseShop=='shop_2'){
                 $_SESSION['selectShop']='shop_2';
+                header("location: main.php");
             }else{
                 $_SESSION['selectShop']='allShop';
-                /* while($row = pg_fetch_assoc($result)) 
-            {
-            ?> 
-                <tr>
-                
-                <td><?php echo $row['name']?></td>
-                <td><?php echo $row['company']?></td>
-                <td><img src="./img/<?php echo $row['image']?>" alt="img" width="250" height="250"></td>
-                <td><?php echo $row['category']?></td>
-                <td><?php echo $row['amount']?></td>
-                <td><?php echo $row['price']?></td>
-                <td>
-                <a href="update.php?id=<?php echo $row['id']?>" class="btn btn-success">Update </a>
-                <a href="delete.php?id=<?php echo $row['id']?>" class="btn btn-danger">Delete </a>
-                </td>
-            </tr> 
-                
-            <?php
-            } */
+                header("location: main.php");
+              
             }
         
         }
