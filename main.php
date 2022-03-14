@@ -66,7 +66,8 @@
                             <br>
                         <label for="cars">Choose shop:</label>
                         <select name="category" id="cars">
-                            <option value="Shop">Toy</option>
+                            <option value="Shop"><?php echo $row['company'] ?></option>
+                            <option value="Shop">shop_2</option>
                         </select>
                         </div>
 
