@@ -6,6 +6,19 @@
     $sql_selectShop = "SELECT * FROM product where company='$selectShop'";
     $result = pg_query($conn, $sql);
     $result_select = pg_query($conn, $sql_selectShop);
+    if(isset($_SESSION['selectShop']) && isset($_SESSION['selectAllShop'])) 
+        { 
+            if ($_POST['submit']) { 
+                $company = $_POST['company'];
+                if($_POST['company'] == "allShop") { 
+                    unset($_SESSION['selectShop']);
+                    
+                }
+                else { 
+                    unset($_SESSION['selectAllShop']);
+                }
+            }
+        }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -174,6 +187,8 @@
                                                 <?php
                                                 }
                                             }
+
+                                            
                                             
                                        ?> 
                                             
