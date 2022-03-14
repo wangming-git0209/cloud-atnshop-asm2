@@ -2,6 +2,7 @@
     include('database.php');
     $sql = "SELECT * FROM product";
     $result = pg_query($conn, $sql);
+    $row = pg_fetch_assoc($result);
 ?>
 <!DOCTYPE html>
 <html lang="en">
