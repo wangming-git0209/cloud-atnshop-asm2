@@ -67,8 +67,14 @@
                             <br>
                         <label for="cars">Choose shop:</label>
                         <select name="category" id="cars">
-                            <option value="Shop"><?php echo $row['company'] ?></option>
-                            <option value="Shop">shop_2</option>
+                            <option value="Shop"><?php 
+                            while($row = pg_fetch_assoc($result)) {
+
+                                echo $row['company']; 
+                            }
+                            
+                            ?></option>
+                            
                         </select>
                         </div>
 
