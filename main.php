@@ -68,9 +68,9 @@
                         <label for="cars">Choose shop:</label>
                         <select name="category" id="cars">
                         <?php 
-                            while($row = pg_fetch_assoc($result)) { ?>
+                            while($rowShop = pg_fetch_assoc($result)) { ?>
                                 <option value="Shop">
-                                    <?php echo $row['company']; ?>
+                                    <?php echo $rowShop['company']; ?>
 
                               </option> <?php
                             }
