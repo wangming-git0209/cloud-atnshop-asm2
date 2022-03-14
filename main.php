@@ -62,7 +62,7 @@
                     <div class="container-fluid">
                         <h1 class="mt-4">Product</h1>
 
-                        <form action="handle_select.php" >
+                        <!-- <form action="handle_select.php" > -->
                         <div class="form-group">
                             <br>
                         <label>Choose shop:</label>
@@ -74,7 +74,7 @@
                         </select>
                         <input type="submit">
                         </div>
-                        </form>
+                        <!-- </form> -->
 
                         <div class="card mb-4">
                             <div class="card-header">
@@ -99,20 +99,20 @@
                                         </thead>
                                         <tbody>                             
                                         <?php while($row = pg_fetch_assoc($result)) {?>
-            <tr>
-                <td><?php echo $row['id']?></td>
-                <td><?php echo $row['name']?></td>
-                <td><?php echo $row['company']?></td>
-                <td><img src="./img/<?php echo $row['image']?>" alt="img" width="250" height="250"></td>
-                <td><?php echo $row['category']?></td>
-                <td><?php echo $row['amount']?></td>
-                <td><?php echo $row['price']?></td>
-                <td>
-                  <a href="update.php?id=<?php echo $row['id']?>" class="btn btn-success">Update </a>
-                  <a href="delete.php?id=<?php echo $row['id']?>" class="btn btn-danger">Delete </a>
-                </td>
-            </tr> 
-        <?php } ?>
+                                <tr>
+                                    <td><?php echo $row['id']?></td>
+                                    <td><?php echo $row['name']?></td>
+                                    <td><?php echo $row['company']?></td>
+                                    <td><img src="./img/<?php echo $row['image']?>" alt="img" width="250" height="250"></td>
+                                    <td><?php echo $row['category']?></td>
+                                    <td><?php echo $row['amount']?></td>
+                                    <td><?php echo $row['price']?></td>
+                                    <td>
+                                    <a href="update.php?id=<?php echo $row['id']?>" class="btn btn-success">Update </a>
+                                    <a href="delete.php?id=<?php echo $row['id']?>" class="btn btn-danger">Delete </a>
+                                    </td>
+                                </tr> 
+                            <?php } ?>
                                           
                           </tbody>
                                     </table>
