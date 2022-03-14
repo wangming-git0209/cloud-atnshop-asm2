@@ -75,7 +75,7 @@
                                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                         <thead>
                                             <tr>
-                                                <th>ID</th>
+                                              
                                                 <th>Name</th>
                                                 <th>Shop Name</th>
                                                 <th>Images</th>
@@ -89,7 +89,7 @@
                                         <tbody>                             
                                         <?php while($row = pg_fetch_assoc($result)) {?>
             <tr>
-                <td><?php echo $row['id']?></td>
+                
                 <td><?php echo $row['name']?></td>
                 <td><?php echo $row['company']?></td>
                 <td><img src="./img/<?php echo $row['image']?>" alt="img" width="250" height="250"></td>
