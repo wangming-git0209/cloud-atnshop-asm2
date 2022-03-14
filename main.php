@@ -149,7 +149,7 @@
                                                 }
                                             }
                                             
-                                            if(!isset($_SESSION['selectAllShop']) || !isset($_SESSION['selectShop'])) {
+                                            if(!isset($_SESSION['selectAllShop']) && !isset($_SESSION['selectShop'])) {
                                                 while($row = pg_fetch_assoc($result)) 
                                                 {
                                                 ?> 
