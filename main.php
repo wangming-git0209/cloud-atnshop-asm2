@@ -62,6 +62,14 @@
                     <div class="container-fluid">
                         <h1 class="mt-4">Product</h1>
 
+                        <div class="form-group">
+                            <br>
+                        <label for="cars">Choose shop:</label>
+                        <select name="category" id="cars">
+                            <option value="Shop">Toy</option>
+                        </select>
+                        </div>
+
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-table mr-1"></i>
