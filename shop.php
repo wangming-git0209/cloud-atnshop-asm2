@@ -2,7 +2,7 @@ session_start();
 
 <?php 
     include('database.php');
-    $nameShop = $_SESSION['login_user']; 
+    $nameShop = $_SESSION['login_user'];
     $sql = "SELECT * FROM product WHERE company = '$nameShop'";
     $result = pg_query($conn, $sql);
 ?>
