@@ -7,5 +7,5 @@
     $result = pg_query($conn, $pg);
     header('location: shop.php'); 
     
-    // director werwer
+   
 ?>
