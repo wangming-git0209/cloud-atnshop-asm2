@@ -4,13 +4,13 @@
     if(isset($_POST['submit']) ) {
        
         $productName = $_POST['name'];
-        $company = $_POST['company'];
+        
         $amount = $_POST['amount'];
         $image = $_POST['image'];
         $category = $_POST['category'];
         $price = $_POST['price'];
         
-        $pg = "INSERT INTO product (company, name, image, category, price, amount) VALUES ('$company', '$productName', '$image', '$category', '$price', '$amount')";
+        $pg = "INSERT INTO product (company, name, image, category, price, amount) VALUES ('$nameShop', '$productName', '$image', '$category', '$price', '$amount')";
 
         $result = pg_query($conn, $pg);
 

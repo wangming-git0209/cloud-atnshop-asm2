@@ -36,14 +36,7 @@
                     name="amount"
                     >
                 </div>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Company</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" 
-                    aria-describedby="emailHelp" placeholder="Enter company"
-                    name="company"
-                >
-                
-            </div>
+            
             <div class="form-group">
                 <br>
                 <label for="exampleInputPassword1">image</label>
